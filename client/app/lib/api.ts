@@ -1,7 +1,7 @@
 const API_BASE =
   process.env.NEXT_PUBLIC_API_BASE || "http://localhost:5000/api";
 
-/* ---------------- DEALS ---------------- */
+
 
 export async function fetchDeals() {
   const res = await fetch(`${API_BASE}/deals`);
@@ -11,7 +11,7 @@ export async function fetchDeals() {
   return res.json();
 }
 
-/* ---------------- AUTH ---------------- */
+// authenticated
 
 export async function loginUser(email: string, password: string) {
   const res = await fetch(`${API_BASE}/auth/login`, {
@@ -49,7 +49,6 @@ export async function registerUser(
   return data; // { token }
 }
 
-/* ---------------- CLAIMS ---------------- */
 
 export async function claimDeal(dealId: string, token: string) {
   const res = await fetch(`${API_BASE}/claims`, {

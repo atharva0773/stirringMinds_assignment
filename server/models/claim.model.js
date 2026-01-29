@@ -21,7 +21,7 @@ const claimSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// Prevent duplicate claims
+
 claimSchema.index({ user: 1, deal: 1 }, { unique: true });
 
 module.exports = mongoose.model("Claim", claimSchema);

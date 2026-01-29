@@ -94,7 +94,7 @@ export default function DealsPage() {
               <div className="absolute inset-0 z-10 flex items-center justify-center rounded-xl bg-[#EAEFEF]/80 backdrop-blur-sm">
                 <div className="text-center">
                   <p className="text-sm font-medium">
-                    🔒 Locked
+                     Locked
                   </p>
                   <p className="mt-1 text-xs text-[#25343F]/70">
                     Verify your startup to unlock
