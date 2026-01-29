@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 export default function HomePage() {
   return (
-    <section className="relative overflow-hidden bg-[#EAEFEF]">
-      <div className="mx-auto max-w-7xl px-6 py-28 text-center">
+    <section className="relative min-h-screen overflow-hidden bg-[#EAEFEF] flex items-center">
+      <div className="mx-auto max-w-7xl px-6 text-center">
 
         {/* Badge */}
         <motion.div
@@ -66,8 +66,8 @@ export default function HomePage() {
       </div>
 
       {/* Background Glow */}
-      <div className="pointer-events-none absolute inset-0 -z-10 flex justify-center">
-        <div className="h-[500px] w-[500px] rounded-full bg-[#FF9B51]/20 blur-3xl" />
+      <div className="pointer-events-none absolute inset-0 -z-10 flex items-center justify-center">
+        <div className="h-[420px] w-[420px] rounded-full bg-[#FF9B51]/20 blur-3xl" />
       </div>
     </section>
   );
